@@ -26,7 +26,6 @@ public class SSHConnection {
             sshConnector.connect(USERNAME, PASSWORD, HOST, PORT);
             //sshConnector.executeCommand("enable");
             //sshConnector.executeCommand("config");
-            System.out.println("Hola");
             String result = sshConnector.executeCommand("show board");
             sshConnector.disconnect();
              
